@@ -13,6 +13,38 @@ Use Render from OpenCode to deploy apps, validate Blueprints, debug failed deplo
 
 ## Installing the plugin
 
+### Install from GitHub
+
+Until the package is published to npm, install the local OpenCode plugin, skills, commands, and agent directly from GitHub:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/render-oss/render-opencode-plugin/main/install.sh | bash
+```
+
+This writes files to `~/.config/opencode/`:
+
+- `plugins/render.ts`
+- `skills/render-*/SKILL.md`
+- `commands/deploy-to-render.md`
+- `commands/check-render-status.md`
+- `agents/render.md`
+
+The installer doesn't overwrite existing files unless you pass `--force`:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/render-oss/render-opencode-plugin/main/install.sh | bash -s -- --force
+```
+
+Preview changes without writing files:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/render-oss/render-opencode-plugin/main/install.sh | bash -s -- --dry-run
+```
+
+Restart OpenCode after installation.
+
+### Install from npm
+
 Add the npm package to your OpenCode config:
 
 ```json
@@ -22,7 +54,7 @@ Add the npm package to your OpenCode config:
 }
 ```
 
-OpenCode installs npm plugins with Bun at startup and caches them in `~/.cache/opencode/node_modules/`.
+OpenCode installs npm plugins with Bun at startup and caches them in `~/.cache/opencode/node_modules/`. This flow requires the package to be published to npm.
 
 ## Installing skills, commands, and the agent
 
