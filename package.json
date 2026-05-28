@@ -1,0 +1,55 @@
+{
+  "name": "@render/opencode-plugin",
+  "version": "0.1.0",
+  "description": "OpenCode plugin for deploying, debugging, and monitoring applications on Render.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Render",
+    "email": "support@render.com",
+    "url": "https://render.com"
+  },
+  "homepage": "https://github.com/render-oss/render-opencode-plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/render-oss/render-opencode-plugin.git"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "render",
+    "deploy",
+    "cloud",
+    "blueprint",
+    "mcp",
+    "monitoring",
+    "debugging"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "bin": {
+    "render-opencode": "./dist/setup.js"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "prepack": "npm run build",
+    "check": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.15.11"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7"
+  }
+}

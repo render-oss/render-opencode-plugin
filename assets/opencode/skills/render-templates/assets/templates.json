@@ -1,0 +1,1323 @@
+{
+  "templates": [
+    {
+      "slug": "aeo-analytics",
+      "url": "https://render.com/templates/aeo-analytics",
+      "name": "AEO analytics",
+      "category": "ai-agents",
+      "description": "Deploy AEO Analytics on Render to track how LLMs mention your brand vs competitors with multi-model support and insights.",
+      "intents": [
+        "track brand mentions in LLMs",
+        "build an AEO analytics dashboard",
+        "monitor how AI models describe my company",
+        "compare my brand against competitors in AI answers"
+      ],
+      "stack": [
+        "nextjs",
+        "postgresql",
+        "python",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "database"
+      ]
+    },
+    {
+      "slug": "blog-thumbnail-generator-with-render-workflows",
+      "url": "https://render.com/templates/blog-thumbnail-generator-with-render-workflows",
+      "name": "Blog Thumbnail Generator with Render Workflows",
+      "category": "workflows",
+      "description": "Deploy the Blog Thumbnail Generator template on Render to create AI-powered thumbnails using parallel workflows with isolated compute.",
+      "intents": [
+        "generate blog thumbnails with AI",
+        "run image generation tasks in parallel",
+        "build a workflow-powered image generator",
+        "create thumbnails from article ideas"
+      ],
+      "stack": [
+        "python",
+        "react",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "workflow service"
+      ]
+    },
+    {
+      "slug": "data-processor-workflow",
+      "url": "https://render.com/templates/data-processor-workflow",
+      "name": "Data processor workflow",
+      "category": "workflows",
+      "description": "Deploy Customer Data Merge on Render. Process 400K records in seconds with parallel workflows that merge CRM, billing, and support data.",
+      "intents": [
+        "process large datasets with Render Workflows",
+        "merge customer records in parallel",
+        "build a parallel data processing workflow",
+        "run batch data jobs with isolated compute"
+      ],
+      "stack": [
+        "python",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "workflow service"
+      ]
+    },
+    {
+      "slug": "seo-audit-with-render-workflows",
+      "url": "https://render.com/templates/seo-audit-with-render-workflows",
+      "name": "SEO Audit with Render Workflows",
+      "category": "workflows",
+      "description": "Deploy SEO Auditor on Render using Workflows for parallel site analysis - check meta tags, broken links, and performance at scale.",
+      "intents": [
+        "build an SEO audit workflow",
+        "scan a site for broken links",
+        "run parallel website checks",
+        "analyze pages with Render Workflows"
+      ],
+      "stack": [
+        "python",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "workflow service"
+      ]
+    },
+    {
+      "slug": "voice-agent-with-render-workflows-python",
+      "url": "https://render.com/templates/voice-agent-with-render-workflows-python",
+      "name": "Voice Agent with Render Workflows - Python",
+      "category": "workflows",
+      "description": "Deploy the Insurance Claim Voice AI Demo on Render. Process claims in real time with voice AI and background workflows.",
+      "intents": [
+        "build a Python voice agent with workflows",
+        "deploy a voice AI demo with background tasks",
+        "orchestrate voice agent work with Render Workflows",
+        "process insurance claims with a voice agent",
+        "create a LiveKit agent that triggers workflows"
+      ],
+      "stack": [
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "workflow service"
+      ]
+    },
+    {
+      "slug": "voice-agent-with-render-workflows-typescript",
+      "url": "https://render.com/templates/voice-agent-with-render-workflows-typescript",
+      "name": "Voice Agent with Render Workflows - TypeScript",
+      "category": "workflows",
+      "description": "Deploy the Insurance Claim Voice AI Demo on Render. Process claims in real time with voice AI and background workflows.",
+      "intents": [
+        "build a TypeScript voice agent with workflows",
+        "deploy a LiveKit voice agent with TypeScript",
+        "run background workflow tasks from a voice call",
+        "create a voice AI app with Render Workflows",
+        "process voice conversations with async tasks"
+      ],
+      "stack": [
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "workflow service"
+      ]
+    },
+    {
+      "slug": "webhook-workflow",
+      "url": "https://render.com/templates/webhook-workflow",
+      "name": "Webhook Workflow",
+      "category": "workflows",
+      "description": "Deploy the Webhook + Render Workflows Demo on Render for secure HMAC-validated webhooks with reliable async processing.",
+      "intents": [
+        "process webhooks asynchronously",
+        "build an HMAC-validated webhook receiver",
+        "trigger Render Workflows from a webhook",
+        "handle webhook retries safely",
+        "deploy a durable webhook processing pipeline"
+      ],
+      "stack": [
+        "nodejs",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "workflow service"
+      ]
+    },
+    {
+      "slug": "cursor-self-hosted-agent",
+      "url": "https://render.com/templates/cursor-self-hosted-agent",
+      "name": "Cursor self hosted agent",
+      "category": "ai-agents",
+      "description": "Deploy Cursor self-hosted cloud agents on Render without Kubernetes. Run AI coding agents in your own network with simple managed services.",
+      "intents": [
+        "self host Cursor agents",
+        "run Cursor cloud agents on my own infrastructure",
+        "deploy Cursor agents without Kubernetes",
+        "connect Cursor agents to Slack or Linear triggers",
+        "run AI coding agents in a private network"
+      ],
+      "stack": [
+        "docker"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "background worker"
+      ]
+    },
+    {
+      "slug": "mcp-server-typescript",
+      "url": "https://render.com/templates/mcp-server-typescript",
+      "name": "MCP Server template - TypeScript",
+      "category": "ai-agents",
+      "description": "Deploy the MCP Server TypeScript template on Render. Fork, add your own tools, and launch with one-click Blueprint deployment.",
+      "intents": [
+        "build an MCP server in TypeScript",
+        "deploy a TypeScript MCP server",
+        "create a Model Context Protocol server with the TypeScript SDK",
+        "add MCP tools with Zod validation",
+        "host an MCP endpoint for Cursor or Claude"
+      ],
+      "stack": [
+        "typescript"
+      ],
+      "free_tier": true,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "mcp-server-python",
+      "url": "https://render.com/templates/mcp-server-python",
+      "name": "MCP server template - Python",
+      "category": "ai-agents",
+      "description": "Deploy the MCP Server Python template on Render with one click. Includes FastMCP, auth, and health checks ready to go.",
+      "intents": [
+        "build an MCP server in Python",
+        "deploy a Python MCP server",
+        "create a Model Context Protocol server with FastMCP",
+        "expose Python tools to Claude or Cursor via MCP",
+        "host an authenticated MCP endpoint"
+      ],
+      "stack": [
+        "python"
+      ],
+      "free_tier": true,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "trender",
+      "url": "https://render.com/templates/trender",
+      "name": "Trender",
+      "category": "workflows",
+      "description": "Deploy Trender on Render to track trending GitHub repos with parallel workflows and a 3-layer analytics pipeline.",
+      "intents": [
+        "track trending GitHub repos",
+        "build a GitHub analytics workflow",
+        "analyze repositories with parallel tasks",
+        "create a trends dashboard with workflows"
+      ],
+      "stack": [
+        "nextjs",
+        "postgresql",
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "database",
+        "workflow service"
+      ]
+    },
+    {
+      "slug": "note-taker-ai",
+      "url": "https://render.com/templates/note-taker-ai",
+      "name": "AI Note Taker",
+      "category": "ai-agents",
+      "description": "An AI-powered note-taking application that transcribes and summarizes audio recordings using AssemblyAI and OpenAI.",
+      "intents": [
+        "deploy AI Note Taker",
+        "build an AI app like AI Note Taker",
+        "host an AI starter on Render",
+        "create a note taker ai template"
+      ],
+      "stack": [
+        "flask",
+        "nextjs"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "docs-agent",
+      "url": "https://render.com/templates/docs-agent",
+      "name": "Docs Agent",
+      "category": "ai-agents",
+      "description": "An AI-powered documentation agent that helps users interact with their product documentation through natural language chat.",
+      "intents": [
+        "build a docs chatbot",
+        "create a RAG agent for documentation",
+        "let users chat with product docs",
+        "deploy a documentation search assistant",
+        "build an AI support agent from docs"
+      ],
+      "stack": [
+        "express",
+        "postgresql",
+        "react",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "database"
+      ]
+    },
+    {
+      "slug": "icp-analysis-chat-agent",
+      "url": "https://render.com/templates/icp-analysis-chat-agent",
+      "name": "ICP Analysis Chat Agent",
+      "category": "ai-agents",
+      "description": "Deploy the ICP Analysis Chat Agent template on Render. Analyze customer data with AI-powered chat to identify ideal customer profiles instantly.",
+      "intents": [
+        "deploy ICP Analysis Chat Agent",
+        "build an AI app like ICP Analysis Chat Agent",
+        "host an AI starter on Render",
+        "create a icp analysis chat agent template"
+      ],
+      "stack": [
+        "fastapi",
+        "nextjs",
+        "postgresql",
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "livekit-voice-agent",
+      "url": "https://render.com/templates/livekit-voice-agent",
+      "name": "LiveKit Voice Agent",
+      "category": "ai-agents",
+      "description": "Full-stack voice AI application template built with LiveKit Agents, Next.js, and Rime TTS.",
+      "intents": [
+        "build a LiveKit voice agent",
+        "deploy a voice AI app",
+        "create a browser-based AI voice assistant",
+        "host a real-time voice agent",
+        "build a Next.js voice agent with LiveKit"
+      ],
+      "stack": [
+        "nextjs",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "rag-chatbot",
+      "url": "https://render.com/templates/rag-chatbot",
+      "name": "RAG Chatbot",
+      "category": "ai-agents",
+      "description": "A full-stack Retrieval-Augmented Generation (RAG) chatbot example with OpenAI integration.",
+      "intents": [
+        "build a RAG chatbot",
+        "deploy a chatbot with retrieval",
+        "create a full-stack AI chatbot",
+        "build a React and Express chatbot with Postgres",
+        "add vector search to an AI chat app"
+      ],
+      "stack": [
+        "express",
+        "postgresql",
+        "react"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "database"
+      ]
+    },
+    {
+      "slug": "web-scraper-and-summarizer-ai-agent",
+      "url": "https://render.com/templates/web-scraper-and-summarizer-ai-agent",
+      "name": "Web Scraper & Summarizer AI Agent",
+      "category": "ai-agents",
+      "description": "An intelligent web scraping and summarization tool powered by AI.",
+      "intents": [
+        "build a web research agent",
+        "scrape a website and summarize it with AI",
+        "deploy an AI web scraper",
+        "create a summarizer for crawled pages",
+        "build a website research assistant"
+      ],
+      "stack": [
+        "express",
+        "nextjs",
+        "nodejs"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "url-to-markdown-with-crawl4ai",
+      "url": "https://render.com/templates/url-to-markdown-with-crawl4ai",
+      "name": "URL to Markdown with Crawl4AI",
+      "category": "ai-agents",
+      "description": "Deploy URL to Markdown with Crawl4AI on Render. Convert any webpage to clean, LLM-ready markdown with JS rendering support.",
+      "intents": [
+        "convert a URL to markdown",
+        "deploy Crawl4AI",
+        "turn webpages into LLM-ready markdown",
+        "scrape pages with JavaScript rendering",
+        "build a webpage ingestion service for RAG"
+      ],
+      "stack": [
+        "docker",
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "actix-todo",
+      "url": "https://render.com/templates/actix-todo",
+      "name": "Actix Todo App",
+      "category": "infrastructure",
+      "description": "Deploy the Actix Todo App template on Render with PostgreSQL. Get your Rust web application live in minutes with this ready-to-use starter.",
+      "intents": [
+        "deploy Actix Todo App on Render",
+        "host a actix todo app",
+        "create a Actix Todo App starter",
+        "build a web service with Actix Todo App"
+      ],
+      "stack": [
+        "postgresql",
+        "rust"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "adminer",
+      "url": "https://render.com/templates/adminer",
+      "name": "Adminer",
+      "category": "infrastructure",
+      "description": "Deploy Adminer on Render to easily manage MySQL, PostgreSQL, and other databases with this full-featured web-based management tool.",
+      "intents": [
+        "deploy Adminer on Render",
+        "manage a database from the browser",
+        "create a web UI for Postgres or MySQL",
+        "inspect database tables with Adminer"
+      ],
+      "stack": [
+        "docker",
+        "php"
+      ],
+      "free_tier": true,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "astro-ssr",
+      "url": "https://render.com/templates/astro-ssr",
+      "name": "Astro SSR",
+      "category": "infrastructure",
+      "description": "Deploy an Astro SSR app on Render with this template. Features server-side rendering, API routes, and Tailwind CSS v4.",
+      "intents": [
+        "deploy Astro SSR on Render",
+        "host Astro SSR",
+        "create a astro ssr starter"
+      ],
+      "stack": [
+        "tailwind",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "browser-use",
+      "url": "https://render.com/templates/browser-use",
+      "name": "Browser-use",
+      "category": "ai-agents",
+      "description": "Deploy Browser Use on Render with this template. Get a ready-to-use FastAPI service for running browser automation tasks on demand.",
+      "intents": [
+        "deploy browser-use",
+        "run browser automation from an API",
+        "control a browser with natural language",
+        "create a Playwright automation agent",
+        "host a browser automation service for scraping or UI checks"
+      ],
+      "stack": [
+        "docker",
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "celery",
+      "url": "https://render.com/templates/celery",
+      "name": "Celery",
+      "category": "databases",
+      "description": "Celery Quick Start on Render",
+      "intents": [
+        "deploy Celery on Render",
+        "host Celery",
+        "create a celery database service",
+        "run Celery with persistent storage"
+      ],
+      "stack": [
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "private service",
+        "disk"
+      ]
+    },
+    {
+      "slug": "chatgpt-retrieval-plugin",
+      "url": "https://render.com/templates/chatgpt-retrieval-plugin",
+      "name": "ChatGPT Retrieval Plugin",
+      "category": "ai-agents",
+      "description": "The ChatGPT Retrieval Plugin lets you easily search and find personal or work documents by asking questions in everyday language.",
+      "intents": [
+        "deploy ChatGPT Retrieval Plugin",
+        "build an AI app like ChatGPT Retrieval Plugin",
+        "host an AI starter on Render",
+        "create a chatgpt retrieval plugin template"
+      ],
+      "stack": [
+        "fastapi",
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "datadog-agent",
+      "url": "https://render.com/templates/datadog-agent",
+      "name": "Datadog Agent",
+      "category": "ai-agents",
+      "description": "Deploy the Datadog Agent template on Render to capture APM traces and metrics for all your services from a single private service.",
+      "intents": [
+        "deploy Datadog Agent",
+        "build an AI app like Datadog Agent",
+        "host an AI starter on Render",
+        "create a datadog agent template"
+      ],
+      "stack": [
+        "docker"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "distributed-elixir-cluster",
+      "url": "https://render.com/templates/distributed-elixir-cluster",
+      "name": "Distributed Elixir Cluster",
+      "category": "infrastructure",
+      "description": "Distributed Elixir Cluster on Render with libcluster and Mix Releases",
+      "intents": [
+        "deploy Distributed Elixir Cluster on Render",
+        "host Distributed Elixir Cluster",
+        "create a distributed elixir cluster starter"
+      ],
+      "stack": [],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "django",
+      "url": "https://render.com/templates/django",
+      "name": "Django",
+      "category": "web-frameworks",
+      "description": "Deploy Django on Render with this quick-start template. Includes PostgreSQL setup and one-click deployment for fast, hassle-free hosting.",
+      "intents": [
+        "deploy Django on Render",
+        "start a Django app with Postgres",
+        "host a Python Django web app",
+        "create a Django project with a database"
+      ],
+      "stack": [
+        "postgresql",
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "database"
+      ]
+    },
+    {
+      "slug": "elasticsearch",
+      "url": "https://render.com/templates/elasticsearch",
+      "name": "Elasticsearch",
+      "category": "infrastructure",
+      "description": "Deploy Elasticsearch on Render with persistent disk storage. This template keeps your search engine secure in a private network.",
+      "intents": [
+        "deploy Elasticsearch on Render",
+        "host Elasticsearch",
+        "create a elasticsearch starter"
+      ],
+      "stack": [],
+      "free_tier": false,
+      "creates": [
+        "private service",
+        "disk"
+      ]
+    },
+    {
+      "slug": "express-hello-world",
+      "url": "https://render.com/templates/express-hello-world",
+      "name": "Express",
+      "category": "infrastructure",
+      "description": "Deploy the Express Hello World template on Render for a fast, simple Node.js server setup with minimal configuration.",
+      "intents": [
+        "deploy Express on Render",
+        "host a express hello world app",
+        "create a Express starter",
+        "build a web service with Express"
+      ],
+      "stack": [
+        "express",
+        "javascript",
+        "nodejs"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "fastapi",
+      "url": "https://render.com/templates/fastapi",
+      "name": "FastAPI",
+      "category": "web-frameworks",
+      "description": "Deploy FastAPI on Render with this ready-to-use template. Get your Python API live in minutes with automatic dependency detection.",
+      "intents": [
+        "deploy FastAPI on Render",
+        "host a Python API",
+        "create a FastAPI service",
+        "deploy a Uvicorn app",
+        "start a Python backend API"
+      ],
+      "stack": [
+        "fastapi",
+        "python"
+      ],
+      "free_tier": true,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "flask-hello-world",
+      "url": "https://render.com/templates/flask-hello-world",
+      "name": "Flask",
+      "category": "web-frameworks",
+      "description": "Deploy Flask on Render with this quickstart template. Get your Python web app live in minutes with automatic deploys and free SSL.",
+      "intents": [
+        "deploy Flask on Render",
+        "host a flask hello world app",
+        "create a Flask starter",
+        "build a web service with Flask"
+      ],
+      "stack": [
+        "flask",
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "ghost",
+      "url": "https://render.com/templates/ghost",
+      "name": "Ghost",
+      "category": "databases",
+      "description": "Deploy Ghost CMS on Render with this template. Get permanent SSD storage and MySQL 8 support for your production-ready publishing platform.",
+      "intents": [
+        "deploy Ghost on Render",
+        "host Ghost",
+        "create a ghost database service",
+        "run Ghost with persistent storage"
+      ],
+      "stack": [
+        "docker"
+      ],
+      "free_tier": false,
+      "creates": [
+        "private service",
+        "disk"
+      ]
+    },
+    {
+      "slug": "go-gin",
+      "url": "https://render.com/templates/go-gin",
+      "name": "Go Gin",
+      "category": "infrastructure",
+      "description": "Deploy the Go Gin Web Server template on Render for a fast, production-ready starting point for your Go web applications.",
+      "intents": [
+        "deploy Go Gin on Render",
+        "host a go gin app",
+        "create a Go Gin starter",
+        "build a web service with Go Gin"
+      ],
+      "stack": [
+        "go"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "hugo-quick-start",
+      "url": "https://render.com/templates/hugo-quick-start",
+      "name": "Hugo Quick Start",
+      "category": "infrastructure",
+      "description": "Deploy Hugo on Render with this template. Get your static site live in minutes with automatic builds and free SSL included.",
+      "intents": [
+        "deploy Hugo Quick Start on Render",
+        "self host Hugo Quick Start",
+        "run a hugo quick start CMS",
+        "host a blog or publishing platform"
+      ],
+      "stack": [
+        "go"
+      ],
+      "free_tier": false,
+      "creates": [
+        "static site"
+      ]
+    },
+    {
+      "slug": "laravel",
+      "url": "https://render.com/templates/laravel",
+      "name": "Laravel",
+      "category": "web-frameworks",
+      "description": "Deploy Laravel on Render with this Docker PHP template. Get your app live in minutes with PostgreSQL database support.",
+      "intents": [
+        "deploy Laravel on Render",
+        "host a PHP Laravel app",
+        "create a Laravel app with Postgres",
+        "deploy a Dockerized Laravel project"
+      ],
+      "stack": [
+        "docker",
+        "php",
+        "postgresql"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "database"
+      ]
+    },
+    {
+      "slug": "mcp-server-template-with-descope-auth",
+      "url": "https://render.com/templates/mcp-server-template-with-descope-auth",
+      "name": "MCP server template with Descope auth",
+      "category": "ai-agents",
+      "description": "A simple FastMCP server template for Render, with full MCP authentication by Descope.",
+      "intents": [
+        "deploy MCP server template with Descope auth",
+        "build an MCP server like MCP server template with Descope auth",
+        "create a Model Context Protocol starter",
+        "host MCP tools on Render"
+      ],
+      "stack": [
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "metabase",
+      "url": "https://render.com/templates/metabase",
+      "name": "Metabase",
+      "category": "self-hosted-tools",
+      "description": "Deploy Metabase on Render with this template. Get powerful open-source business intelligence and analytics dashboards running in just a few clicks.",
+      "intents": [
+        "deploy Metabase on Render",
+        "self host Metabase",
+        "create an analytics dashboard",
+        "run open-source business intelligence",
+        "host BI dashboards with Postgres"
+      ],
+      "stack": [
+        "docker",
+        "postgresql"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "database"
+      ]
+    },
+    {
+      "slug": "minio",
+      "url": "https://render.com/templates/minio",
+      "name": "MinIO",
+      "category": "infrastructure",
+      "description": "Deploy MinIO on Render with this template. Get S3-compatible object storage with managed TLS and automatic backups in one click.",
+      "intents": [
+        "deploy MinIO on Render",
+        "host S3-compatible object storage",
+        "create a private object storage service",
+        "run MinIO with persistent storage"
+      ],
+      "stack": [],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "disk"
+      ]
+    },
+    {
+      "slug": "mongodb",
+      "url": "https://render.com/templates/mongodb",
+      "name": "MongoDB",
+      "category": "databases",
+      "description": "Deploy MongoDB on Render with one click using this template. Get a fully managed NoSQL database running in minutes.",
+      "intents": [
+        "deploy MongoDB on Render",
+        "host a MongoDB database",
+        "run MongoDB in Docker",
+        "create a persistent NoSQL database"
+      ],
+      "stack": [
+        "docker"
+      ],
+      "free_tier": false,
+      "creates": [
+        "private service",
+        "disk"
+      ]
+    },
+    {
+      "slug": "movie-context-provider",
+      "url": "https://render.com/templates/movie-context-provider",
+      "name": "Movie Context Provider",
+      "category": "ai-agents",
+      "description": "An OpenAI App demo built with the OpenAI Apps SDK, that's ready to deploy on Render.",
+      "intents": [
+        "deploy Movie Context Provider",
+        "build an MCP server like Movie Context Provider",
+        "create a Model Context Protocol starter",
+        "host MCP tools on Render"
+      ],
+      "stack": [
+        "postgresql"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "mysql",
+      "url": "https://render.com/templates/mysql",
+      "name": "MySQL",
+      "category": "databases",
+      "description": "MySQL 8.0 and 5.7 on Render",
+      "intents": [
+        "deploy MySQL on Render",
+        "host a MySQL database",
+        "run MySQL in Docker",
+        "create a MySQL service for my app"
+      ],
+      "stack": [
+        "docker"
+      ],
+      "free_tier": false,
+      "creates": [
+        "private service",
+        "disk"
+      ]
+    },
+    {
+      "slug": "nextjs-hello-world",
+      "url": "https://render.com/templates/nextjs-hello-world",
+      "name": "Next.js",
+      "category": "web-frameworks",
+      "description": "Deploy a Next.js hello world app to Render.",
+      "intents": [
+        "deploy Next.js on Render",
+        "host a Next.js app",
+        "create a Next.js starter",
+        "deploy a React full-stack app"
+      ],
+      "stack": [
+        "javascript",
+        "nextjs",
+        "nodejs",
+        "typescript"
+      ],
+      "free_tier": true,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "postgresql-s3-backups",
+      "url": "https://render.com/templates/postgresql-s3-backups",
+      "name": "PostgreSQL S3 Backups",
+      "category": "databases",
+      "description": "This repo can be used to deploy a Cron Job on Render to backup a PostgreSQL instance to Amazon S3.",
+      "intents": [
+        "back up Postgres to S3",
+        "schedule PostgreSQL backups",
+        "create a cron job for database backups",
+        "export a Render Postgres database to S3"
+      ],
+      "stack": [
+        "postgresql"
+      ],
+      "free_tier": false,
+      "creates": [
+        "cron job"
+      ]
+    },
+    {
+      "slug": "rabbitmq",
+      "url": "https://render.com/templates/rabbitmq",
+      "name": "RabbitMQ",
+      "category": "infrastructure",
+      "description": "Deploy RabbitMQ on Render with this template. Backed by a Render disk for persistent storage and resilience against restarts or deploys.",
+      "intents": [
+        "deploy RabbitMQ on Render",
+        "host RabbitMQ",
+        "create a rabbitmq starter"
+      ],
+      "stack": [],
+      "free_tier": false,
+      "creates": [
+        "private service",
+        "disk"
+      ]
+    },
+    {
+      "slug": "remix",
+      "url": "https://render.com/templates/remix",
+      "name": "Remix",
+      "category": "infrastructure",
+      "description": "Deploy this Remix template on Render for a quick start. Built with create-remix for seamless deployment and fast web app development.",
+      "intents": [
+        "deploy Remix on Render",
+        "host Remix",
+        "create a remix starter"
+      ],
+      "stack": [
+        "javascript",
+        "nodejs",
+        "react",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "remix-postgres",
+      "url": "https://render.com/templates/remix-postgres",
+      "name": "Remix Postgres",
+      "category": "databases",
+      "description": "A Remix Stack for deploying to Render with PostgreSQL, authentication, testing, linting, formatting, etc.",
+      "intents": [
+        "deploy Remix Postgres on Render",
+        "host Remix Postgres",
+        "create a remix postgres database service",
+        "run Remix Postgres with persistent storage"
+      ],
+      "stack": [
+        "nodejs",
+        "postgresql",
+        "tailwind"
+      ],
+      "free_tier": false,
+      "creates": [
+        "private service",
+        "disk"
+      ]
+    },
+    {
+      "slug": "rendertron",
+      "url": "https://render.com/templates/rendertron",
+      "name": "Rendertron",
+      "category": "infrastructure",
+      "description": "Deploy Rendertron on Render to serve SEO-friendly content to bots using headless Chrome rendering for your PWA.",
+      "intents": [
+        "deploy Rendertron on Render",
+        "host Rendertron",
+        "create a rendertron starter"
+      ],
+      "stack": [],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "retool",
+      "url": "https://render.com/templates/retool",
+      "name": "Retool",
+      "category": "self-hosted-tools",
+      "description": "Deploy Retool on Render with one click. Build internal tools faster using this ready-to-use template with managed PostgreSQL included.",
+      "intents": [
+        "deploy Retool on Render",
+        "self host Retool",
+        "build internal tools",
+        "run Retool with Postgres"
+      ],
+      "stack": [
+        "docker",
+        "postgresql"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "database"
+      ]
+    },
+    {
+      "slug": "rocket",
+      "url": "https://render.com/templates/rocket",
+      "name": "Rocket",
+      "category": "infrastructure",
+      "description": "Deploy Rocket on Render with this Rust web app template. Get your Rocket-powered application live in minutes with zero config.",
+      "intents": [
+        "deploy Rocket on Render",
+        "host a rocket app",
+        "create a Rocket starter",
+        "build a web service with Rocket"
+      ],
+      "stack": [
+        "rust"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "strapi-sqlite",
+      "url": "https://render.com/templates/strapi-sqlite",
+      "name": "Strapi SQLite",
+      "category": "self-hosted-tools",
+      "description": "Deploy Strapi with SQLite on Render using this template. Includes persistent disk storage for your database and media files.",
+      "intents": [
+        "deploy Strapi with SQLite",
+        "host a small Strapi CMS",
+        "run Strapi with persistent disk storage",
+        "create a headless CMS without Postgres"
+      ],
+      "stack": [
+        "nodejs",
+        "strapi"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "disk"
+      ]
+    },
+    {
+      "slug": "strapi-postgres",
+      "url": "https://render.com/templates/strapi-postgres",
+      "name": "Strapi with PostgreSQL",
+      "category": "self-hosted-tools",
+      "description": "Deploy Strapi with PostgreSQL on Render",
+      "intents": [
+        "deploy Strapi with Postgres",
+        "host a headless CMS",
+        "create a Strapi CMS on Render",
+        "run Strapi with a managed database"
+      ],
+      "stack": [
+        "nodejs",
+        "postgresql",
+        "strapi"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "database"
+      ]
+    },
+    {
+      "slug": "strapi-postgres-cloudinary",
+      "url": "https://render.com/templates/strapi-postgres-cloudinary",
+      "name": "Strapi with PostgreSQL and Cloudinary",
+      "category": "self-hosted-tools",
+      "description": "Deploy the Strapi template on Render with PostgreSQL and Cloudinary for seamless content management and media storage.",
+      "intents": [
+        "deploy Strapi with PostgreSQL and Cloudinary on Render",
+        "self host Strapi with PostgreSQL and Cloudinary",
+        "run a strapi postgres cloudinary CMS",
+        "host a blog or publishing platform"
+      ],
+      "stack": [
+        "nodejs",
+        "postgresql",
+        "strapi"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "sveltekit",
+      "url": "https://render.com/templates/sveltekit",
+      "name": "SvelteKit",
+      "category": "infrastructure",
+      "description": "Deploy SvelteKit on Render with this template. Get started quickly by forking this repo or creating your own SvelteKit project from scratch.",
+      "intents": [
+        "deploy SvelteKit on Render",
+        "host SvelteKit",
+        "create a sveltekit starter"
+      ],
+      "stack": [
+        "javascript",
+        "nodejs",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "tailscale",
+      "url": "https://render.com/templates/tailscale",
+      "name": "Tailscale",
+      "category": "self-hosted-tools",
+      "description": "Deploy the Tailscale template on Render to create a secure VPN gateway for accessing all your private services.",
+      "intents": [
+        "deploy Tailscale on Render",
+        "access private services through Tailscale",
+        "create a VPN gateway for Render services",
+        "connect my tailnet to Render private services",
+        "securely reach internal Render apps"
+      ],
+      "stack": [],
+      "free_tier": false,
+      "creates": [
+        "private service"
+      ]
+    },
+    {
+      "slug": "temporal",
+      "url": "https://render.com/templates/temporal",
+      "name": "Temporal",
+      "category": "infrastructure",
+      "description": "Deploy Temporal on Render with this template. Get a production-ready cluster with independent autoscaling and advanced visibility via Elasticsearch.",
+      "intents": [
+        "deploy Temporal on Render",
+        "host a temporal app",
+        "create a Temporal starter",
+        "build a web service with Temporal"
+      ],
+      "stack": [
+        "go"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "vue-hello-world",
+      "url": "https://render.com/templates/vue-hello-world",
+      "name": "Vue Hello World",
+      "category": "infrastructure",
+      "description": "Deploy Vue.js on Render with this template. Get your Vue app live in minutes with automatic builds and free static site hosting.",
+      "intents": [
+        "deploy Vue Hello World on Render",
+        "host a vue hello world static site",
+        "create a static site starter",
+        "publish a Vue Hello World site"
+      ],
+      "stack": [
+        "javascript",
+        "typescript"
+      ],
+      "free_tier": false,
+      "creates": [
+        "static site"
+      ]
+    },
+    {
+      "slug": "webhook-discord-bot",
+      "url": "https://render.com/templates/webhook-discord-bot",
+      "name": "Webhook Discord Bot",
+      "category": "infrastructure",
+      "description": "Deploy the Webhook Discord Bot template on Render to automatically send Discord messages when your server fails.",
+      "intents": [
+        "send Discord alerts from Render webhooks",
+        "deploy a Discord webhook bot",
+        "notify Discord when my server fails",
+        "build a Render webhook Discord bot",
+        "forward webhooks to Discord"
+      ],
+      "stack": [
+        "nodejs"
+      ],
+      "free_tier": true,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "webhook-github-action",
+      "url": "https://render.com/templates/webhook-github-action",
+      "name": "Webhook GitHub Action",
+      "category": "self-hosted-tools",
+      "description": "Example to trigger a GitHub action after deploy success on Render",
+      "intents": [
+        "deploy Webhook GitHub Action on Render",
+        "host Webhook GitHub Action",
+        "create a webhook github action starter"
+      ],
+      "stack": [
+        "nodejs"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "webhook-receiver",
+      "url": "https://render.com/templates/webhook-receiver",
+      "name": "Webhook Receiver",
+      "category": "self-hosted-tools",
+      "description": "Deploy the Webhook Receiver template on Render to capture webhooks and log payloads with automatic Render API integration.",
+      "intents": [
+        "deploy Webhook Receiver on Render",
+        "host Webhook Receiver",
+        "create a webhook receiver starter"
+      ],
+      "stack": [
+        "nodejs"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "wordpress",
+      "url": "https://render.com/templates/wordpress",
+      "name": "Wordpress",
+      "category": "self-hosted-tools",
+      "description": "Wordpress hosted on Render",
+      "intents": [
+        "deploy Wordpress on Render",
+        "host a Wordpress blog",
+        "self host Wordpress",
+        "run a CMS on Render"
+      ],
+      "stack": [
+        "docker"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service",
+        "disk"
+      ]
+    },
+    {
+      "slug": "fastai-v3",
+      "url": "https://render.com/templates/fastai-v3",
+      "name": "fast.ai v3",
+      "category": "ai-agents",
+      "description": "Starter app for fastai v3 model deployment on Render",
+      "intents": [
+        "deploy fast.ai v3",
+        "build an AI app like fast.ai v3",
+        "host an AI starter on Render",
+        "create a fastai v3 template"
+      ],
+      "stack": [
+        "docker",
+        "python"
+      ],
+      "free_tier": false,
+      "creates": [
+        "web service"
+      ]
+    },
+    {
+      "slug": "n8n",
+      "url": "https://render.com/templates/n8n",
+      "name": "n8n",
+      "category": "self-hosted-tools",
+      "description": "Deploy n8n on Render using this template. It configures the official n8n Docker image and a Postgres database on free instance types.",
+      "intents": [
+        "self host n8n",
+        "deploy n8n on Render",
+        "run a workflow automation tool",
+        "create an automation service with Postgres",
+        "host n8n without managing servers"
+      ],
+      "stack": [
+        "docker",
+        "postgresql"
+      ],
+      "free_tier": true,
+      "creates": [
+        "web service",
+        "database"
+      ]
+    }
+  ]
+}
