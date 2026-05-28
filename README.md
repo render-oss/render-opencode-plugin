@@ -41,6 +41,14 @@ Preview changes without writing files:
 curl -fsSL https://raw.githubusercontent.com/render-oss/render-opencode-plugin/main/install.sh | bash -s -- --dry-run
 ```
 
+Install the Render MCP server config too:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/render-oss/render-opencode-plugin/main/install.sh | bash -s -- --enable-mcp
+```
+
+This preserves your existing `opencode.json` fields and skips an existing `mcp.render` entry unless you pass `--force`. Set `RENDER_API_KEY` before using Render MCP.
+
 Restart OpenCode after installation.
 
 ### Install from npm

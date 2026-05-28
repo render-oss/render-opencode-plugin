@@ -6,6 +6,7 @@ CONFIG_DIR="${OPENCODE_CONFIG_DIR:-${HOME:-}/.config/opencode}"
 SOURCE_DIR=""
 FORCE="0"
 DRY_RUN="0"
+ENABLE_MCP="0"
 
 usage() {
   cat <<'EOF'
@@ -17,6 +18,7 @@ Usage:
 Options:
   --config-dir <path>  Target OpenCode config directory. Defaults to ~/.config/opencode.
   --source <path>      Use a local repo checkout instead of downloading from GitHub.
+  --enable-mcp        Add the Render MCP server to opencode.json.
   --force             Overwrite existing files.
   --dry-run           Print what would change without writing files.
   -h, --help          Show this help.
@@ -35,6 +37,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --force)
       FORCE="1"
+      shift
+      ;;
+    --enable-mcp)
+      ENABLE_MCP="1"
       shift
       ;;
     --dry-run)
@@ -112,9 +118,69 @@ for dir in plugins skills commands agents; do
   done < <(find "$ASSETS_DIR/$dir" -type f -print0)
 done
 
+install_mcp_config() {
+  local config_path="$CONFIG_DIR/opencode.json"
+
+  if ! command -v python3 >/dev/null 2>&1; then
+    echo "Cannot enable MCP because python3 is not installed." >&2
+    exit 1
+  fi
+
+  if [[ "$DRY_RUN" == "1" ]]; then
+    echo "would merge Render MCP server into $config_path"
+    return
+  fi
+
+  mkdir -p "$CONFIG_DIR"
+
+  CONFIG_PATH="$config_path" FORCE="$FORCE" python3 <<'PY'
+import json
+import os
+from pathlib import Path
+
+config_path = Path(os.environ["CONFIG_PATH"])
+force = os.environ.get("FORCE") == "1"
+
+if config_path.exists() and config_path.read_text().strip():
+    config = json.loads(config_path.read_text())
+else:
+    config = {"$schema": "https://opencode.ai/config.json"}
+
+if not isinstance(config, dict):
+    raise SystemExit(f"{config_path} must contain a JSON object.")
+
+mcp = config.setdefault("mcp", {})
+if not isinstance(mcp, dict):
+    raise SystemExit(f"{config_path} has a non-object mcp field.")
+
+if "render" in mcp and not force:
+    print(f"skipped existing Render MCP config in {config_path}")
+    raise SystemExit(0)
+
+mcp["render"] = {
+    "type": "remote",
+    "url": "https://mcp.render.com/mcp",
+    "enabled": True,
+    "oauth": False,
+    "headers": {
+        "Authorization": "Bearer {env:RENDER_API_KEY}",
+    },
+}
+
+config_path.write_text(json.dumps(config, indent=2) + "\n")
+print(f"merged Render MCP server into {config_path}")
+PY
+}
+
+if [[ "$ENABLE_MCP" == "1" ]]; then
+  install_mcp_config
+fi
+
 cat <<EOF
 
 Render OpenCode files installed.
+
+$(if [[ "$ENABLE_MCP" == "1" ]]; then echo "Set RENDER_API_KEY before using Render MCP."; fi)
 
 Restart OpenCode so it can load new plugins, skills, commands, and agents.
 EOF
