@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "OpenCode plugin for deploying, debugging, and monitoring applications on Render.",
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
   "license": "MIT",
   "author": {
     "name": "Render",
@@ -26,7 +29,8 @@
     "debugging"
   ],
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/index.js",
+    "./server": "./dist/index.js"
   },
   "bin": {
     "render-opencode": "./dist/setup.js"
@@ -39,16 +43,18 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && node scripts/build-plugin.mjs",
     "test": "vitest run",
     "prepack": "npm run build",
-    "check": "npm run build && npm test"
+    "check": "npm run build && npm test",
+    "test:integration": "npm run build && node scripts/test-integration.mjs"
   },
   "dependencies": {
     "@opencode-ai/plugin": "^1.15.11"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
+    "esbuild": "^0.28.0",
     "tsx": "^4.22.3",
     "typescript": "^6.0.3",
     "vitest": "^4.1.7"

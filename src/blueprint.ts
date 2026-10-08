@@ -17,16 +17,21 @@ export function isBlueprintFile(filePath: string) {
   return name === "render.yaml" || name === "render.yml"
 }
 
-export function getBlueprintWorkingDirectory(filePath: string) {
-  return dirname(resolve(filePath))
+export function getBlueprintWorkingDirectory(filePath: string, directory = process.cwd()) {
+  return dirname(resolve(directory, filePath))
 }
 
-export async function validateBlueprint(filePath: string): Promise<ValidationResult> {
-  const cwd = getBlueprintWorkingDirectory(filePath)
-  const command = "render blueprints validate"
+export async function validateBlueprint(filePath: string, directory = process.cwd(), signal?: AbortSignal): Promise<ValidationResult> {
+  const path = resolve(directory, filePath)
+  const cwd = dirname(path)
+  const command = `render blueprints validate ${JSON.stringify(path)} --output json`
 
   try {
-    const result = await execFileAsync("render", ["blueprints", "validate"], { cwd })
+    const result = await execFileAsync("render", ["blueprints", "validate", path, "--output", "json"], {
+      cwd,
+      signal,
+      timeout: 30_000,
+    })
     const output = [result.stdout, result.stderr].filter(Boolean).join("\n").trim()
     return {
       ok: true,
